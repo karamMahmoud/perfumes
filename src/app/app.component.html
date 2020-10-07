@@ -1,0 +1,12 @@
+<div class="wrapper">
+    <div class="sidebar" data-color='unset' data-image="" [hidden]="!showNavBar">
+        <app-sidebar></app-sidebar>
+        <div class="sidebar-background" ></div>
+    </div>
+    <div class="main-panel">
+        <app-navbar ></app-navbar>
+        <router-outlet (activate)="changeOfRoutes()"></router-outlet>
+        <app-footer [hidden]="!showNavBar"></app-footer>
+
+    </div>
+</div>
