@@ -322,3 +322,24 @@ $primary: #b79b6c;
     display: none !important;
   }
 }
+
+.subscribe-section{
+  background-image: url('assets/img/cover.jpg');
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $primary;
+  .subscribe{
+    width: 50%;
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    h3{
+      font-weight: bold;
+    }
+  }
+}
