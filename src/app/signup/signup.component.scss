@@ -1,0 +1,68 @@
+// start sceion-one
+.info-section{
+  padding: 50px 0px;
+
+  background-image: url("assets/img/cover2.png");
+  background-position: center;
+  background-size: cover;
+  .logo{
+    max-width: 400px;
+    margin: auto;
+    img{
+      width: 100%;
+    }
+  }
+  .personal-info{
+    width: 65%;
+    padding: 30px ;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    min-width: 350px;
+ 
+    .title{
+      margin: 20px 0px;
+      text-align: center;
+      color: #fff;
+      padding: 0px 50px;
+    
+
+h1{
+font-size: 20px;
+margin: auto;
+border-bottom: 1px solid;
+padding-bottom: 10px;
+}
+    }
+    .formula{
+      padding: 10px 30px;
+      color: #fff;
+      button{
+        color: #fff;
+        background-color: #1D1A1A;
+        padding: 10px 70px;
+        margin-top: 30px;
+        box-shadow: none;
+
+      }
+      @media only screen and (max-width: 767px) {
+        button {
+             padding: 10px;
+        }
+      }
+    }
+    .font-15{
+      font-size: 15px;
+    }
+    .border-ridus{
+      border-radius: 10px;
+      color: black;
+    }
+  
+  }
+
+}
+
+// end sceion-one
