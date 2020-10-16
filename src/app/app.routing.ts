@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { SignupComponent } from './signup/signup.component';
 
 import { LoginComponent } from './auth/login/login.component';
+import { PaymentComponent } from './payment/payment.component';
 import { ChangePasswordComponent } from './auth/change-password/change-password.component';
 import { ResetPasswordComponent } from './auth/reset-password/reset-password.component';
 import { ForgetPasswordComponent } from './auth/forget-password/forget-password.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
     path: 'dashboard',
     loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule),
   },
+  { path: 'payment',  component: PaymentComponent},
   // {
   //   path: 'user-profile',
   //   loadChildren: () => import('./user-profile/user-profile.module').then(m => m.UserProfileModule),

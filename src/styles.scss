@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+$primary: #b79b6c;
 
+@media (max-width: 992px) {
+    .collapse:not(.show) {
+      display: none !important;
+    }
+  }
 /* @import "../node_modules/ng2-toastr/bundles/ng2-toastr.min.css"; */
 // @import "./assets/css/demo.css";
 // @import "./assets/sass/material-dashboard.scss";

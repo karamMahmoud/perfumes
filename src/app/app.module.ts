@@ -52,6 +52,7 @@ import { ChangePasswordComponent } from './auth/change-password/change-password.
 import { ResetPasswordComponent } from './auth/reset-password/reset-password.component';
 import { ForgetPasswordComponent } from './auth/forget-password/forget-password.component';
 import { PermissionsGuard } from './helper/permisssion-guard'
+import { PaymentComponent } from './payment/payment.component';
 
 // AoT requires an exported function for factories
 export function createTranslateLoader(http: HttpClient) {
@@ -62,6 +63,7 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [
     AppComponent,
 	ChangePasswordComponent,
+	PaymentComponent,
   ResetPasswordComponent,
   SignupComponent,
   ForgetPasswordComponent,
