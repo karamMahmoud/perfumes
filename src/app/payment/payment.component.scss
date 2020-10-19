@@ -1,3 +1,97 @@
-.workHere{
-  height: 1000px;
+#home{
+  margin-top: -38px;
+  position: relative;
+   height: 700px;
+   min-height: 500px;
+   width: 100%;
+   background: url('images/bg-min.jpg') !important; 
+   background-size: cover !important;
+	-webkit-background-size: cover !important;
+   text-align: center;
+   overflow: hidden;
+   margin-bottom: -20px;
+}
+.payment-form{
+  height: 510px;
+  width: 850px;
+  border-radius: 15px 15px 15px 15px;
+  // margin: auto;
+  margin-top: 25px;
+  padding: 10px;
+  backdrop-filter: blur(13px);
+}
+.value{
+  margin: auto;
+  width: 70px;
+  height: 40px;
+  backdrop-filter: blur(80px);
+  border: 1px solid rgb(90, 77, 0);
+  border-radius: 10px 10px 10px 10px;
+  padding-top: 8px;
+  backdrop-filter: brightness(200%);
+}
+.payment-img{
+  margin: auto;
+}
+.card-info{
+  margin: auto;
+}
+.card-exp{
+  // margin: auto;
+  width: 150px;
+}
+.card-cvv{
+ width: 50px;
+}
+p{
+  margin-bottom: -5px;
+  font-weight: bold;
+  color: white;
+}
+.btn{
+  width: 200px;
+  background-color: black;
+  border: none;
+}
+.btn:hover{
+  background-color: rgb(32, 32, 32);
+}
+.master{
+  background-image: url('images/mastercard.jpg');
+  height: 45px;
+  width: 8px;
+  background-repeat: no-repeat;
+  margin-left: 43px;
+}
+.master:hover{
+  cursor: pointer;
+}
+.knet{
+  background-image: url('images/knet.jpg');
+  height: 45px;
+  width: 8px;
+  background-repeat: no-repeat;
+  margin-left: -13px;
+}
+.knet:hover{
+  cursor: pointer;
+}
+.last-inputs{
+  margin-left: 300px;
+}
+@media screen and (max-width: 768px) {
+  .payment-form {
+    width: 320px;
+    height: 550px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .last-inputs{
+    margin-left: 235px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .last-inputs{
+    margin-left: 35px;
+  }
 }
