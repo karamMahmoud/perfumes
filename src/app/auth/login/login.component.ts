@@ -6,7 +6,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css'],
+  styleUrls: ['./login.component.scss'],
   providers: [GlobalEventsManager]
 })
 export class LoginComponent implements OnInit {
@@ -59,8 +59,8 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this.requiredMsg = false;
-    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
-    this.router.navigate([this.returnUrl]);
+    // this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+    // this.router.navigate([this.returnUrl]);
   }
 
 }

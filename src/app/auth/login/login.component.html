@@ -1,56 +1,64 @@
-<div class="main-content">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 login-container">
-                <div class="card">
-                    <div class="card-header" data-background-color="green">
-                        <h4 class="title">Login</h4>
-                        <p class="category"></p>
-                    </div>
-                    <div class="card-content">
-                        <form #f="ngForm" (ngSubmit)="login(f)" #loginForm="ngForm">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group form-black label-floating is-empty">
-                                        <label class="control-label">Email Address</label>
-                                        <input #userEmail="ngModel" [(ngModel)]="credentials.email" name="email" required type="email" class="form-control">
-                                    </div>
-                                    <div *ngIf="(userEmail.errors?.required && userEmail.touched) || (requiredMsg && !credentials.email)" class="text-danger">you have to enter the email</div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group form-black label-floating is-empty">
-                                        <label class="control-label">Password</label>
-                                        <input #userPassword="ngModel" [(ngModel)]="credentials.password" required name="password" type="password" class="form-control">
-                                    </div>
-                                    <div *ngIf="(userPassword.errors?.required && userPassword.touched) || (requiredMsg && !credentials.password)" class="text-danger">you have to enter the password</div>
-                                </div>
-                            </div>
-                            <div class="" *ngIf="errorMsgs">
-                                <label for="example_input_full_name" class="text-danger">
-                                    Error Messages:
-                                </label>
-                                <span class="m-form__help text-danger d-block" *ngFor="let err of errorMsgs | objectArray">
-                                    <br>{{err}}:&nbsp;{{errorMsgs[err][0]}} 
-                                </span>
-                            </div>
-                            <div class="" *ngIf="errorData">
-                                <label for="example_input_full_name" class="text-danger">
-                                    Error Messages:
-                                </label>
-                                <span class="m-form__help text-danger d-block">
-                                   {{errorData}}
-                                </span>
-                            </div>
-                            <a routerLink="/forget-password">Forget password ?</a>
-                            <button type="submit" class="btn btn-success pull-right">Login</button>
-                            <div class="clearfix"></div>
-                        </form>
-                    </div>
-                </div>
+<!-- start sceion-one -->
+<div class="info-section">
+    <div class="container">
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="">
+        </div>
+        <div class="personal-info">
+
+            <div class="title">
+                <h1>login</h1>
             </div>
 
+            <form #f="ngForm" (ngSubmit)="login(f)" #loginForm="ngForm" class="formula">
+                <div class="form-group row mb-5 mt-4">
+                    <label class="col-lg-4 col-12 col-form-label ">Username</label>
+                    <div class="col-lg-8 col-12">
+                        <input #userEmail="ngModel" [(ngModel)]="credentials.email" name="email" required type="email"
+                            class="form-control border-ridus" placeholder="My name is…">
+                        <div *ngIf="(userEmail.errors?.required && userEmail.touched) || (requiredMsg && !credentials.email)"
+                            class="text-danger warn">you have to enter the email
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group row mb-5 ">
+                    <label for="inputPassword4" class="col-lg-4 col-12 col-form-label ">Password</label>
+                    <div class="col-lg-8 col-12">
+                        <input #userPassword="ngModel" [(ngModel)]="credentials.password" required name="password"
+                            type="password" class="form-control" placeholder="+9">
+                            <div *ngIf="(userPassword.errors?.required && userPassword.touched) || (requiredMsg && !credentials.password)"
+                            class="text-danger warn">you have to enter the password
+                        </div>
+                        <a routerLink="/forget-password" class="modulate">Forget password ?</a>
+
+                    </div>
+                
+                </div>
+                <div class="" *ngIf="errorMsgs">
+                    <label for="example_input_full_name" class="text-danger">
+                        Error Messages:
+                    </label>
+                    <span class="m-form__help text-danger d-block" *ngFor="let err of errorMsgs | objectArray">
+                        <br>{{err}}:&nbsp;{{errorMsgs[err][0]}}
+                    </span>
+                </div>
+                <div class="" *ngIf="errorData">
+                    <label for="example_input_full_name" class="text-danger">
+                        Error Messages:
+                    </label>
+                    <span class="m-form__help text-danger d-block">
+                        {{errorData}}
+                    </span>
+                </div>
+
+                <button type="submit" class="btn btn-lg Continue">Done</button>
+
+            </form>
         </div>
     </div>
 </div>
+
+<!-- end sceion-one -->

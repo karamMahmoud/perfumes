@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule , ReactiveFormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AuthGuard } from './helper/guard';
 import { NotAuthGuard } from './helper/auth-guard';
@@ -11,11 +11,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { UserProfileModule } from './user-profile/user-profile.module';
 import { BaseModule } from './base/base.module';
-import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {HttpClientModule, HttpClient} from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 
 import {
@@ -56,30 +57,31 @@ import { PaymentComponent } from './payment/payment.component';
 
 // AoT requires an exported function for factories
 export function createTranslateLoader(http: HttpClient) {
-    return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+	return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 @NgModule({
-  declarations: [
-    AppComponent,
-	ChangePasswordComponent,
-	PaymentComponent,
-  ResetPasswordComponent,
-  SignupComponent,
-  ForgetPasswordComponent,
-  LoginComponent
-  ],
-  imports: [
-	BrowserModule,
-	BaseModule,
-    FormsModule,
-	MatButtonModule,
-	DashboardModule,
-	UserProfileModule,
+	declarations: [
+		AppComponent,
+		ChangePasswordComponent,
+		PaymentComponent,
+		ProductDetailsComponent,
+		ResetPasswordComponent,
+		SignupComponent,
+		ForgetPasswordComponent,
+		LoginComponent
+	],
+	imports: [
+		BrowserModule,
+		BaseModule,
+		FormsModule,
+		MatButtonModule,
+		DashboardModule,
+		UserProfileModule,
 		MatMenuModule,
 		MatSelectModule,
 		ReactiveFormsModule,
-        MatInputModule,
+		MatInputModule,
 		MatTableModule,
 		MatAutocompleteModule,
 		MatRadioModule,
@@ -95,20 +97,20 @@ export function createTranslateLoader(http: HttpClient) {
 		MatSnackBarModule,
 		MatTabsModule,
 		MatTooltipModule,
-    HttpClientModule,
-    ComponentsModule,
-RouterModule,
-    AppRoutingModule,
-	BrowserAnimationsModule,
-	TranslateModule.forRoot({
-		loader: {
-			provide: TranslateLoader,
-			useFactory: createTranslateLoader,
-			deps: [HttpClient]
-		}
-	})
-  ],
-  providers: [AuthGuard,NotAuthGuard,GlobalEventsManager, AuthenticationService,UsersService,PermissionsGuard],
-  bootstrap: [AppComponent],
+		HttpClientModule,
+		ComponentsModule,
+		RouterModule,
+		AppRoutingModule,
+		BrowserAnimationsModule,
+		TranslateModule.forRoot({
+			loader: {
+				provide: TranslateLoader,
+				useFactory: createTranslateLoader,
+				deps: [HttpClient]
+			}
+		})
+	],
+	providers: [AuthGuard, NotAuthGuard, GlobalEventsManager, AuthenticationService, UsersService, PermissionsGuard],
+	bootstrap: [AppComponent],
 })
 export class AppModule { }

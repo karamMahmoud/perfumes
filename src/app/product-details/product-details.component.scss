@@ -1,0 +1,290 @@
+// start sceion-one
+.info-section{
+    padding: 50px 0px;
+    background-image: url("assets/img/cover2.png");
+    background-position: center;
+    background-size: cover;
+    .personal-info{
+        width: 85%;
+        backdrop-filter: blur(10px);
+        border-radius: 30px;
+        text-align: center;
+        margin: auto;
+        min-width: 350px;
+        padding: 20px 10px;
+     
+        .photo{
+            max-width: 400px;
+            margin: auto;
+            img{
+              width: 100%;
+            }
+       }
+        
+    .perfume-details{
+        padding-top: 15px;
+        .rate{
+            border-bottom: 1px solid #fff;
+
+            h1{
+                margin: 0px;
+                font-size: 20px;
+            }
+            p{
+                margin: 0px;
+                color: #C1C8CE;
+                font-size: 10px;
+                i{
+                    color: rgb(255, 115, 0);
+                    padding: 3px;
+
+                }
+                .white{
+                    color: #C1C8CE;
+                    padding-right: 8px;
+                }
+            }
+        }
+        .price{
+            padding: 10px 0px;
+            border-bottom: 1px solid #fff;
+            h1{
+                font-size: 15px;
+                color: #FF4858;
+                span{
+                   color:#C1C8CE ; 
+                   text-decoration: line-through;
+                }
+            }
+            p{
+                color: black;
+                font-weight: bold;
+                font-size: 15px;
+                display: flex;
+                justify-content: space-between;
+                span{
+                    display: inline-block;
+                    font-weight: lighter;
+                    margin: auto;
+                }
+               
+            }
+        }
+        .size{
+            padding: 10px 0px;
+            border-bottom: 1px solid #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            h1{
+                font-size: 15px;
+            }
+            select{
+                border: 1px solid #fff;
+                background-color: transparent;
+                color: black;
+                width: 30%;
+                box-shadow: none;
+            }
+        }
+        .perfum-chart{
+            padding: 10px 0px;
+            border-bottom: 1px solid #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .timer{
+                background-color: #fff;
+                color: #33A0FF;
+                padding: 1px 7px;
+                span{
+                    display: inline-block;
+                    padding-left: 8px;
+                }
+                .black{
+                    color: black;
+                }
+            }
+            .add-chart{
+                button{
+                    color: #33A0FF;
+                    font-size: 12px;
+                    box-shadow: none;
+                    padding: 5px 10px;
+                    background-color: #b5b9bc;
+                    i{
+                        padding-right: 8px;
+                    }
+                }
+
+            }
+        }
+        .share{
+            padding: 10px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button{
+                color: #fff;
+                padding: 5px 20px;
+                font-size: 13px;
+                i{
+                    padding-right: 10px;
+                }
+                
+            }
+            .facebook{
+                background-color: #385C8E;
+            }
+            .twitter{
+                background-color: #03A9F4;
+            }
+        }
+
+    }
+
+    .new-perfume{
+        padding: 20px 0px;
+        position: relative;
+        .info{
+            position: absolute;
+            bottom: 30px;
+            left: 20px;
+            h1{
+                font-size: 15px;
+                color: #fff;
+                margin: 0px;
+            }
+            h2{
+                margin: 0px;
+                font-size: 16px;
+                i{
+                    font-size: 10px;
+                    color: #ff7300;
+                    padding: 3px;
+                }
+                .white{
+                    color: #fff;
+                }
+            }
+            p{
+              color: #FF4858;
+              font-size: 12px;
+              margin: 0px;
+              span{
+                  color: #fff;
+                  text-decoration: line-through;
+              }
+            }
+        }
+    }
+    .view{
+        background-color: #D8BE94;
+        border-radius: 30px;
+        
+        .view-title{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+            h1{
+                font-size: 15px;
+                margin-right: 40px;
+                span{
+                    display: inline-block;
+                    padding-left: 7px;
+                    color: #8b8888;
+                }
+            }
+        }
+        .parent{
+            background-color: #e6e8d9;
+            bottom: 24px;
+            height: 4px;
+            margin: auto;
+            position: relative;
+            margin-top: 20px;
+            hr{
+                border: 2px solid #EFC862;
+                border-radius: 4px;
+                width: 20%;
+                position: absolute;
+                left: 17px;
+                margin: auto;
+            }
+        }
+        p{
+            padding: 20px;
+            font-size: 14px;
+        }
+
+    }
+    
+.content{
+    width: 80%;
+
+    .related-product{
+        .border{
+            border-radius: 30px;
+            border: 2px solid #dee2e6 !important;
+            padding: 10px;
+          
+        }
+       h1{
+           margin: 0px;
+       } 
+       @media only screen and (max-width: 767px) {
+        h1 {
+             font-size: 25px;
+        }
+      }
+      .new-details{
+        h1{
+            font-size: 15px;
+            color: #fff;
+            margin: 0px;
+        }
+        h2{
+            margin: 0px;
+            font-size: 16px;
+            i{
+                font-size: 10px;
+                color: #ff7300;
+                padding: 3px;
+            }
+            .white{
+                color: #fff;
+            }
+        }
+
+        p{
+            color: #FF4858;
+            font-size: 12px;
+            margin: 0px;
+            span{
+                color: #fff;
+                text-decoration: line-through;
+            }
+          }
+      } 
+
+    }
+}
+
+
+
+  
+        }
+       
+       
+       
+  
+      
+      
+    
+  
+    }
+ 
+  
+  // end sceion-one
